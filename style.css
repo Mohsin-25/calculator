@@ -1,0 +1,144 @@
+body {
+    font-family: 'Baloo Bhai 2', cursive;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(100, 100, 255);
+}
+
+#container {
+    height: 90vh;
+    width: 450px;
+    margin: 30px auto;
+    /* border: 0.01px solid; */
+    /* border-radius: 55px; */
+    border-radius: 25px;
+    /* background-color: rgb(5, 5, 5); */
+    background-color: grey;
+    box-shadow: -10px -10px 10px white, 10px 10px 10px black;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+}
+
+#screen {
+    font-family: 'Play', sans-serif;
+    height: 125px;
+    width: 88%;
+    display: inline-block;
+    margin: 21px 21px 21px 21px;
+    border: 0;
+    padding: 0px 7px ;
+    /* border-radius: 40px; */
+    border-radius: 10px;
+    background-color: rgb(215, 215, 215);
+    font-size: 55px;
+    font-weight: bold;
+    box-shadow: -5px -5px 10px white inset, 5px 5px 10px black inset;
+}
+
+.btn {
+    height: 82px;
+    border: 0px;
+    background-color: gray;
+    /* padding:9px ; */
+    border-radius: 25px;
+    display: block;
+    text-align: center;
+    justify-items: center;
+    font-size: 50px;
+    font-weight: bolder;
+    box-shadow: -5px -5px 5px white, 5px 5px 5px black;
+}
+
+.btn:hover,
+#clear:hover,
+.opr:hover {
+    box-shadow: -5px -5px 5px white inset, 5px 5px 5px black inset;
+    /* color: white; */
+}
+
+#btn-0 {
+    grid-row: 5;
+    grid-column: 1/3;
+}
+
+#clear {
+    background-color: rgb(54, 69, 79);
+    color: white;
+    height: 82px;
+    border-radius: 25px;
+    font-weight: bolder;
+    font-size: 40px;
+    border: 0px;
+    box-shadow: -5px -5px 5px white, 5px 5px 5px black;
+}
+
+.opr {
+    border: 0px;
+    height: 82px;
+    /* border: 2px solid white; */
+    border-radius: 25px;
+    display: block;
+    text-align: center;
+    justify-items: center;
+    font-size: 50px;
+    font-weight: bolder;
+    color: white;
+    background-color: rgb(59, 60, 54);
+    box-shadow: -5px -5px 5px white, 5px 5px 5px black;
+}
+
+#btn-onoff{
+    font-size: 30px;
+    color: black;
+    background-color: white;
+    box-shadow: none;
+}
+#btn-onoff:active{
+    color: white;
+    background-color: black;
+}
+#btn-onoff:hover{
+    color: white;
+    background-color: black;
+}
+/* #btn-onoff::before{
+    color: black;
+    background-color: white;
+}
+#btn-onoff::after{
+    color: white;
+    background-color: black;
+} */
+
+.on{
+    color: black;
+    font-weight: bolder;
+}
+.off{
+    color: white;
+}
+
+@media only screen and (max-width:600px){
+    #container {
+        width: 400px;
+    }
+    #screen{
+        width: 86%;
+    }
+}
+@media only screen and (max-height:600px){
+    #container {
+        height: 400px;
+    }
+    #screen{
+        height: 86%;
+    }
+}
