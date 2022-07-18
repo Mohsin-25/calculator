@@ -128,17 +128,18 @@ body {
 
 @media only screen and (max-width:600px){
     #container {
-        width: 400px;
+        width: 330px;
+        height: 605px;
     }
     #screen{
-        width: 86%;
+        width: 84%;
     }
-}
-@media only screen and (max-height:600px){
-    #container {
-        height: 370px;
+    .btn, .opr, #clear{
+        height: 70px;
+        font-size: 42px;
+        border-radius: 18px;
     }
-    #screen{
-        height: 85%;
+    #btn-onoff{
+        font-size: 24px;
     }
 }
