@@ -6,7 +6,7 @@ body {
 }
 
 #container {
-    height: 90vh;
+    height: 666;
     width: 450px;
     margin: 30px auto;
     /* border: 0.01px solid; */
@@ -136,9 +136,9 @@ body {
 }
 @media only screen and (max-height:600px){
     #container {
-        height: 400px;
+        height: 370px;
     }
     #screen{
-        height: 86%;
+        height: 85%;
     }
 }
